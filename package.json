@@ -1,0 +1,28 @@
+{
+  "name": "dad-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for dad jokes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules --experimental-json-modules --experimental-specifier-resolution=node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "dad",
+    "dadjokes",
+    "jokes"
+  ],
+  "author": "Parakoopa",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.5.0",
+    "discord.js": "^13.8.1",
+    "node-fetch": "^3.2.8"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^18.0.5"
+  }
+}
