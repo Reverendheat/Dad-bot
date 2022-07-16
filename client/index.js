@@ -3,7 +3,7 @@ import { Client, Intents } from 'discord.js';
 import { parseInteraction } from '../util/interaction';
 import secrets from '../config.json';
 
-export function initClient () { 
+export function initClient () {
   const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
   // When the client is ready, run this code (only once)
