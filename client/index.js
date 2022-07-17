@@ -1,12 +1,11 @@
 // Require the necessary discord.js classes
 import { Client, Intents } from 'discord.js';
-import { parseInteraction } from '../util/interaction';
+import {parseInteraction} from '../util/parse';
 import secrets from '../config.json';
 
 export function initClient () {
   const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-  // When the client is ready, run this code (only once)
   client.once('ready', () => {
     console.log('Bot Ready.');
   });

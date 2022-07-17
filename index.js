@@ -1,3 +1,6 @@
-import DadBot from './model/DadBot';
+import { initClient } from "./client";
+import { initCommands } from "./command"
 
-DadBot.Start();
+initCommands();
+initClient();
+
